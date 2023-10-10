@@ -4,7 +4,7 @@ const initialState = {
   address: {
     latitude: 28.6667,
     longitude: 77.2167,
-    city: 'Delhi',
+    city: 'Saint-Petersburg',
   },
 };
 
