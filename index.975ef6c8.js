@@ -37376,7 +37376,7 @@ const Header = ()=>{
                                     " ",
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                                         className: "hidden md:block",
-                                        children: "Search"
+                                        children: "Поиск"
                                     }, void 0, false, {
                                         fileName: "src/components/Header.jsx",
                                         lineNumber: 61,
@@ -37408,7 +37408,7 @@ const Header = ()=>{
                                     " ",
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                                         className: "hidden md:block",
-                                        children: "Home"
+                                        children: "Главная"
                                     }, void 0, false, {
                                         fileName: "src/components/Header.jsx",
                                         lineNumber: 70,
@@ -37440,7 +37440,7 @@ const Header = ()=>{
                                     " ",
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                                         className: "hidden md:block",
-                                        children: "About"
+                                        children: "О нас"
                                     }, void 0, false, {
                                         fileName: "src/components/Header.jsx",
                                         lineNumber: 79,
@@ -37472,7 +37472,7 @@ const Header = ()=>{
                                     " ",
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                                         className: "hidden md:block",
-                                        children: "Contact"
+                                        children: "Контакты"
                                     }, void 0, false, {
                                         fileName: "src/components/Header.jsx",
                                         lineNumber: 88,
@@ -49946,7 +49946,7 @@ const initialState = {
     address: {
         latitude: 28.6667,
         longitude: 77.2167,
-        city: "Delhi"
+        city: "Saint-Petersburg"
     }
 };
 const addressSlice = (0, _toolkit.createSlice)({
@@ -55192,67 +55192,10 @@ class About extends (0, _reactDefault.default).Component {
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                            children: [
-                                "This project was built \uD83D\uDD27 during the coursework of",
-                                " ",
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                    className: "text-orange-600",
-                                    href: "https://namastedev.com/namaste-react/",
-                                    children: "Namaste React"
-                                }, void 0, false, {
-                                    fileName: "src/pages/About.jsx",
-                                    lineNumber: 38,
-                                    columnNumber: 13
-                                }, this),
-                                " ",
-                                "taught by",
-                                " ",
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                    className: "text-orange-600",
-                                    href: "https://www.linkedin.com/in/akshaymarch7/",
-                                    children: "Akshay Saini"
-                                }, void 0, false, {
-                                    fileName: "src/pages/About.jsx",
-                                    lineNumber: 45,
-                                    columnNumber: 13
-                                }, this)
-                            ]
-                        }, void 0, true, {
-                            fileName: "src/pages/About.jsx",
-                            lineNumber: 36,
-                            columnNumber: 11
-                        }, this),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                            children: [
-                                "count1 : ",
-                                this.state.count
-                            ]
-                        }, void 0, true, {
-                            fileName: "src/pages/About.jsx",
-                            lineNumber: 53,
-                            columnNumber: 11
-                        }, this),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                            children: [
-                                "count2 : ",
-                                this.state.count2
-                            ]
-                        }, void 0, true, {
-                            fileName: "src/pages/About.jsx",
-                            lineNumber: 54,
-                            columnNumber: 11
-                        }, this),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                            className: "border my-2 bg-gray-50 p-2 px-4 rounded-md",
-                            onClick: ()=>{
-                                this.setState({
-                                    count: this.state.count + 1
-                                });
-                            },
-                            children: "click me"
+                            children: "This project was built \uD83D\uDD27 during the coursework of Yandex Metrics Course"
                         }, void 0, false, {
                             fileName: "src/pages/About.jsx",
-                            lineNumber: 55,
+                            lineNumber: 36,
                             columnNumber: 11
                         }, this)
                     ]
@@ -64269,8 +64212,17 @@ const BannerList = ({ isLoading, banners })=>{
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
                         className: "font-bold text-2xl text-zinc-700",
-                        children: "Best offers for you"
-                    }, void 0, false, {
+                        children: [
+                            "Лучшие предложения ",
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("strong", {
+                                children: "для вас"
+                            }, void 0, false, {
+                                fileName: "src/components/BannerList.jsx",
+                                lineNumber: 38,
+                                columnNumber: 30
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
                         fileName: "src/components/BannerList.jsx",
                         lineNumber: 37,
                         columnNumber: 9
