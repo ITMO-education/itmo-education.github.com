@@ -35,7 +35,7 @@ const BannerList = ({ isLoading, banners }) => {
     <div className='container-max '>
       <div className='flex justify-between items-center mb-4'>
         <h1 className='font-bold text-2xl text-zinc-700'>
-          Best offers for you
+          Лучшие предложения <strong>для вас</strong>
         </h1>
 
         {instanceRef.current && (

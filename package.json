@@ -14,7 +14,7 @@
     "namaste",
     "react"
   ],
-  "author": "Dinesh Rout",
+  "author": "Bukov Alexandr && Okladnikova Olga",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.22.11",

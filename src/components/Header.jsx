@@ -58,7 +58,7 @@ const Header = () => {
               className='p-2 md:px-4 hover:bg-gray-50 rounded-md flex items-center gap-2'
             >
               <MagnifyingGlassIcon className='w-4 h-4 text-gray-700' />{' '}
-              <p className='hidden md:block'>Search</p>
+              <p className='hidden md:block'>Поиск</p>
             </Link>
           </li>
           <li>
@@ -67,7 +67,7 @@ const Header = () => {
               className='p-2 md:px-4 hover:bg-gray-50 rounded-md flex items-center gap-2'
             >
               <HomeIcon className='w-4 h-4 text-gray-700' />{' '}
-              <p className='hidden md:block'>Home</p>
+              <p className='hidden md:block'>Главная</p>
             </Link>
           </li>
           <li>
@@ -76,7 +76,7 @@ const Header = () => {
               className='p-2 md:px-4 hover:bg-gray-50 rounded-md flex items-center gap-2'
             >
               <BuildingOfficeIcon className='w-4 h-4 text-gray-700' />{' '}
-              <p className='hidden md:block'>About</p>
+              <p className='hidden md:block'>О нас</p>
             </Link>
           </li>
           <li>
@@ -85,7 +85,7 @@ const Header = () => {
               className='p-2 md:px-4 hover:bg-gray-50 rounded-md flex items-center gap-2'
             >
               <PhoneIcon className='w-4 h-4 text-gray-700' />{' '}
-              <p className='hidden md:block'>Contact</p>
+              <p className='hidden md:block'>Контакты</p>
             </Link>
           </li>
           <li>
