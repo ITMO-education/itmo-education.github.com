@@ -6,9 +6,11 @@ import BannerList from './BannerList';
 import FoodList from './FoodList';
 import RestaurantList from './RestaurantList';
 
-const Body = () => {
+const Body = (props) => {
+
   const { banners, foods, restaurants, isLoading } =
     useRestaurants(GET_RESTAURANTS_URL);
+
   const [filteredRestaurants, setFilteredRestaurants] = useState([]);
   const serachRef = useRef();
 
@@ -31,7 +33,8 @@ const Body = () => {
   return (
     <div className='bg-white relative py-8'>
       {/* banners */}
-      <BannerList banners={banners} isLoading={isLoading} />
+        <BannerList banners={banners} isLoading={isLoading} experiment={props.expirement}/>
+
 
       {/* food list */}
       <FoodList foods={foods} isLoading={isLoading} />
@@ -60,7 +63,7 @@ const Body = () => {
 
       {/* restaurant list */}
 
-      <RestaurantList isLoading={isLoading} restaurants={filteredRestaurants} />
+      <RestaurantList isLoading={isLoading} restaurants={filteredRestaurants} experiment={props.expirement}/>
     </div>
   );
 };

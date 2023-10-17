@@ -7,7 +7,12 @@ import {
 } from '@heroicons/react/24/outline';
 import { useState } from 'react';
 
-const BannerList = ({ isLoading, banners }) => {
+const BannerList = ({ isLoading, banners, experiment }) => {
+
+  if (experiment === 0 ) {
+    return null
+  }
+
   const [currentSlide, setCurrentSlide] = useState(0);
   const [sliderRef, instanceRef] = useKeenSlider({
     mode: 'free',
