@@ -8,8 +8,7 @@ import {
 import { useState } from 'react';
 
 const BannerList = ({ isLoading, banners, experiment }) => {
-
-  if (experiment === 0 ) {
+  if (experiment !== "1" ) {
     return null
   }
 

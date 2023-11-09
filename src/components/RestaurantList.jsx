@@ -7,11 +7,11 @@ const RestaurantList = ({isLoading, restaurants, experiment}) => {
 	const RestaurantCardTopRated = withTopRatedLabel(RestaurantCard);
 
 	let header = "Рестораны рядом"
-	if (experiment === 0) {
+	if (experiment === "2") {
+		// Эксперимент 2 - сортировка ресторанов по оценке
 		header = "Лучшие рестораны"
+		restaurants = restaurants.sort((a, b) => a.info.avgRating < b.info.avgRating ? 1 : -1)
 	}
-	// Эксперимент 2 - сортировка ресторанов по оценке
-	restaurants = restaurants.sort((a, b) => a.info.avgRating < b.info.avgRating ? 1 : -1)
 
 	return (
 		<div className='container-max'>
