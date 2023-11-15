@@ -10,8 +10,15 @@ const Home = () => {
 		localStorage.setItem(experimentId, exp)
 	}
 	// Эксперимент 1 - показываем лучшие предложения в начале
-	const [getExperiment, setExperiment] = useState(exp)
+	const [getExperiment] = useState(exp)
 	// const [getExperiment, setExperiment] = useState(1)
+
+	const startTime = Date.now()
+	localStorage.setItem('startTime', startTime.toString())
+
+	window.onbeforeunload = function(){
+		localStorage.removeItem('startTime')
+	};
 
 	return <Body expirement={getExperiment}/>;
 };

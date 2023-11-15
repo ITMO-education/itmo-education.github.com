@@ -8,6 +8,9 @@ import {
 import { CDN_URL } from '../utils/constants';
 
 const CartItemList = () => {
+
+  ym(95214851,'reachGoal','tt_order')
+
   const cartItems = useSelector(selectItemsInCart);
   const dispatch = useDispatch();
 
