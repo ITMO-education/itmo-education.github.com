@@ -55248,7 +55248,7 @@ const Cart = ()=>{
             }, void 0, false, {
                 fileName: "src/pages/Cart.jsx",
                 lineNumber: 11,
-                columnNumber: 7
+                columnNumber: 4
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "min-h-[60vh] pb-8 md:flex gap-8",
@@ -55256,24 +55256,24 @@ const Cart = ()=>{
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _cartItemListDefault.default), {}, void 0, false, {
                         fileName: "src/pages/Cart.jsx",
                         lineNumber: 16,
-                        columnNumber: 9
+                        columnNumber: 5
                     }, undefined),
                     cartItems && cartItems.length !== 0 && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _orderSummaryDefault.default), {}, void 0, false, {
                         fileName: "src/pages/Cart.jsx",
                         lineNumber: 18,
-                        columnNumber: 49
+                        columnNumber: 45
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/pages/Cart.jsx",
                 lineNumber: 14,
-                columnNumber: 7
+                columnNumber: 4
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/pages/Cart.jsx",
         lineNumber: 10,
-        columnNumber: 5
+        columnNumber: 3
     }, undefined);
 };
 _s(Cart, "sOGYiwJY+kD+ABxufRt7JbvggIE=", false, function() {
@@ -55307,6 +55307,7 @@ var _constants = require("../utils/constants");
 var _s = $RefreshSig$();
 const CartItemList = ()=>{
     _s();
+    ym(95214851, "reachGoal", "tt_order");
     const cartItems = (0, _reactRedux.useSelector)((0, _cartSlice.selectItemsInCart));
     const dispatch = (0, _reactRedux.useDispatch)();
     const removeItem = (id)=>dispatch((0, _cartSlice.removeFromCart)({
@@ -55325,12 +55326,12 @@ const CartItemList = ()=>{
             children: "Your cart is empty!"
         }, void 0, false, {
             fileName: "src/components/CartItemList.jsx",
-            lineNumber: 23,
+            lineNumber: 26,
             columnNumber: 9
         }, undefined)
     }, void 0, false, {
         fileName: "src/components/CartItemList.jsx",
-        lineNumber: 22,
+        lineNumber: 25,
         columnNumber: 7
     }, undefined);
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
@@ -55346,12 +55347,12 @@ const CartItemList = ()=>{
                             alt: ""
                         }, void 0, false, {
                             fileName: "src/components/CartItemList.jsx",
-                            lineNumber: 37,
+                            lineNumber: 40,
                             columnNumber: 15
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/components/CartItemList.jsx",
-                        lineNumber: 36,
+                        lineNumber: 39,
                         columnNumber: 13
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -55362,7 +55363,7 @@ const CartItemList = ()=>{
                                 children: item?.item?.card?.info?.name
                             }, void 0, false, {
                                 fileName: "src/components/CartItemList.jsx",
-                                lineNumber: 44,
+                                lineNumber: 47,
                                 columnNumber: 15
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -55370,7 +55371,7 @@ const CartItemList = ()=>{
                                 children: item?.item?.card?.info?.description?.length > 50 ? item?.item?.card?.info?.description.slice(0, 50) + "..." : item?.item?.card?.info?.description
                             }, void 0, false, {
                                 fileName: "src/components/CartItemList.jsx",
-                                lineNumber: 48,
+                                lineNumber: 51,
                                 columnNumber: 15
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -55384,7 +55385,7 @@ const CartItemList = ()=>{
                                         ]
                                     }, void 0, true, {
                                         fileName: "src/components/CartItemList.jsx",
-                                        lineNumber: 55,
+                                        lineNumber: 58,
                                         columnNumber: 17
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -55398,13 +55399,13 @@ const CartItemList = ()=>{
                                         ]
                                     }, void 0, true, {
                                         fileName: "src/components/CartItemList.jsx",
-                                        lineNumber: 63,
+                                        lineNumber: 66,
                                         columnNumber: 17
                                     }, undefined)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/components/CartItemList.jsx",
-                                lineNumber: 54,
+                                lineNumber: 57,
                                 columnNumber: 15
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -55420,7 +55421,7 @@ const CartItemList = ()=>{
                                                 children: "-"
                                             }, void 0, false, {
                                                 fileName: "src/components/CartItemList.jsx",
-                                                lineNumber: 71,
+                                                lineNumber: 74,
                                                 columnNumber: 19
                                             }, undefined),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -55428,7 +55429,7 @@ const CartItemList = ()=>{
                                                 children: item?.quantity
                                             }, void 0, false, {
                                                 fileName: "src/components/CartItemList.jsx",
-                                                lineNumber: 80,
+                                                lineNumber: 83,
                                                 columnNumber: 19
                                             }, undefined),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -55437,13 +55438,13 @@ const CartItemList = ()=>{
                                                 children: "+"
                                             }, void 0, false, {
                                                 fileName: "src/components/CartItemList.jsx",
-                                                lineNumber: 83,
+                                                lineNumber: 86,
                                                 columnNumber: 19
                                             }, undefined)
                                         ]
                                     }, void 0, true, {
                                         fileName: "src/components/CartItemList.jsx",
-                                        lineNumber: 70,
+                                        lineNumber: 73,
                                         columnNumber: 17
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -55452,30 +55453,30 @@ const CartItemList = ()=>{
                                         children: "Remove"
                                     }, void 0, false, {
                                         fileName: "src/components/CartItemList.jsx",
-                                        lineNumber: 91,
+                                        lineNumber: 94,
                                         columnNumber: 17
                                     }, undefined)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/components/CartItemList.jsx",
-                                lineNumber: 69,
+                                lineNumber: 72,
                                 columnNumber: 15
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/components/CartItemList.jsx",
-                        lineNumber: 43,
+                        lineNumber: 46,
                         columnNumber: 13
                     }, undefined)
                 ]
             }, item?.item?.card?.info?.id, true, {
                 fileName: "src/components/CartItemList.jsx",
-                lineNumber: 32,
+                lineNumber: 35,
                 columnNumber: 11
             }, undefined))
     }, void 0, false, {
         fileName: "src/components/CartItemList.jsx",
-        lineNumber: 29,
+        lineNumber: 32,
         columnNumber: 5
     }, undefined);
 };
@@ -55782,20 +55783,31 @@ var _body = require("../components/Body");
 var _bodyDefault = parcelHelpers.interopDefault(_body);
 var _react = require("react");
 var _s = $RefreshSig$();
+const experimentId = "ya-da-experiment";
 const Home = ()=>{
     _s();
+    let exp = localStorage.getItem(experimentId);
+    if (!exp) {
+        exp = Math.floor(Math.random() * 3).toString();
+        localStorage.setItem(experimentId, exp);
+    }
     // Эксперимент 1 - показываем лучшие предложения в начале
-    const [getExperiment, setExperiment] = (0, _react.useState)(Math.floor(Math.random() * 2));
+    const [getExperiment] = (0, _react.useState)(exp);
     // const [getExperiment, setExperiment] = useState(1)
+    const startTime = Date.now();
+    localStorage.setItem("startTime", startTime.toString());
+    window.onbeforeunload = function() {
+        localStorage.removeItem("startTime");
+    };
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _bodyDefault.default), {
         expirement: getExperiment
     }, void 0, false, {
         fileName: "src/pages/Home.jsx",
-        lineNumber: 9,
-        columnNumber: 10
+        lineNumber: 23,
+        columnNumber: 9
     }, undefined);
 };
-_s(Home, "H9Dgn8k9sATrz6WaWWl95NLaEZA=");
+_s(Home, "SASTmf3DpVctoywQU6K8Q57QCzE=");
 _c = Home;
 exports.default = Home;
 var _c;
@@ -64187,7 +64199,7 @@ var _react1 = require("react");
 var _s = $RefreshSig$();
 const BannerList = ({ isLoading, banners, experiment })=>{
     _s();
-    if (experiment === 0) return null;
+    if (experiment !== "1") return null;
     const [currentSlide, setCurrentSlide] = (0, _react1.useState)(0);
     const [sliderRef, instanceRef] = (0, _react.useKeenSlider)({
         mode: "free",
@@ -64230,13 +64242,13 @@ const BannerList = ({ isLoading, banners, experiment })=>{
                                 children: "для вас"
                             }, void 0, false, {
                                 fileName: "src/components/BannerList.jsx",
-                                lineNumber: 43,
+                                lineNumber: 42,
                                 columnNumber: 30
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/components/BannerList.jsx",
-                        lineNumber: 42,
+                        lineNumber: 41,
                         columnNumber: 9
                     }, undefined),
                     instanceRef.current && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -64251,14 +64263,14 @@ const BannerList = ({ isLoading, banners, experiment })=>{
                                         className: "w-4 h-4"
                                     }, void 0, false, {
                                         fileName: "src/components/BannerList.jsx",
-                                        lineNumber: 53,
+                                        lineNumber: 52,
                                         columnNumber: 15
                                     }, undefined),
                                     " "
                                 ]
                             }, void 0, true, {
                                 fileName: "src/components/BannerList.jsx",
-                                lineNumber: 48,
+                                lineNumber: 47,
                                 columnNumber: 13
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -64270,26 +64282,26 @@ const BannerList = ({ isLoading, banners, experiment })=>{
                                         className: "w-4 h-4"
                                     }, void 0, false, {
                                         fileName: "src/components/BannerList.jsx",
-                                        lineNumber: 63,
+                                        lineNumber: 62,
                                         columnNumber: 15
                                     }, undefined),
                                     " "
                                 ]
                             }, void 0, true, {
                                 fileName: "src/components/BannerList.jsx",
-                                lineNumber: 55,
+                                lineNumber: 54,
                                 columnNumber: 13
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/components/BannerList.jsx",
-                        lineNumber: 47,
+                        lineNumber: 46,
                         columnNumber: 11
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/BannerList.jsx",
-                lineNumber: 41,
+                lineNumber: 40,
                 columnNumber: 7
             }, undefined),
             isLoading ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -64298,12 +64310,12 @@ const BannerList = ({ isLoading, banners, experiment })=>{
                     length: 3
                 }).map((_, i)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shimmerBannerDefault.default), {}, i, false, {
                         fileName: "src/components/BannerList.jsx",
-                        lineNumber: 72,
+                        lineNumber: 71,
                         columnNumber: 13
                     }, undefined))
             }, void 0, false, {
                 fileName: "src/components/BannerList.jsx",
-                lineNumber: 70,
+                lineNumber: 69,
                 columnNumber: 9
             }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 ref: sliderRef,
@@ -64312,18 +64324,18 @@ const BannerList = ({ isLoading, banners, experiment })=>{
                         banner: banner
                     }, banner.id, false, {
                         fileName: "src/components/BannerList.jsx",
-                        lineNumber: 78,
+                        lineNumber: 77,
                         columnNumber: 13
                     }, undefined))
             }, void 0, false, {
                 fileName: "src/components/BannerList.jsx",
-                lineNumber: 76,
+                lineNumber: 75,
                 columnNumber: 9
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/BannerList.jsx",
-        lineNumber: 40,
+        lineNumber: 39,
         columnNumber: 5
     }, undefined);
 };
@@ -65322,9 +65334,11 @@ var _react = require("react");
 const RestaurantList = ({ isLoading, restaurants, experiment })=>{
     const RestaurantCardTopRated = (0, _restaurantCard.withTopRatedLabel)((0, _restaurantCardDefault.default));
     let header = "Рестораны рядом";
-    if (experiment === 0) header = "Лучшие рестораны";
-    // Эксперимент 2 - сортировка ресторанов по оценке
-    restaurants = restaurants.sort((a, b)=>a.info.avgRating < b.info.avgRating ? 1 : -1);
+    if (experiment === "2") {
+        // Эксперимент 2 - сортировка ресторанов по оценке
+        header = "Лучшие рестораны";
+        restaurants = restaurants.sort((a, b)=>a.info.avgRating < b.info.avgRating ? 1 : -1);
+    }
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "container-max",
         children: [
@@ -65711,6 +65725,8 @@ parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _solid = require("@heroicons/react/24/solid");
 const RestaurantInfo = ({ info })=>{
+    const startTime = Number(localStorage.getItem("startTime"));
+    ym(95214851, "reachGoal", "restorant_tto");
     const { name, sla, areaName, totalRatingsString, avgRatingString, cuisines } = info;
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "flex justify-between items-center pb-4 border-b border-dashed",
@@ -65722,8 +65738,8 @@ const RestaurantInfo = ({ info })=>{
                         children: name
                     }, void 0, false, {
                         fileName: "src/components/RestaurantInfo.jsx",
-                        lineNumber: 10,
-                        columnNumber: 9
+                        lineNumber: 14,
+                        columnNumber: 5
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                         className: "text-xs text-gray-500",
@@ -65734,13 +65750,13 @@ const RestaurantInfo = ({ info })=>{
                                 ]
                             }, i, true, {
                                 fileName: "src/components/RestaurantInfo.jsx",
-                                lineNumber: 13,
-                                columnNumber: 13
+                                lineNumber: 17,
+                                columnNumber: 7
                             }, undefined))
                     }, void 0, false, {
                         fileName: "src/components/RestaurantInfo.jsx",
-                        lineNumber: 11,
-                        columnNumber: 9
+                        lineNumber: 15,
+                        columnNumber: 5
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                         className: "text-xs text-gray-500",
@@ -65751,14 +65767,14 @@ const RestaurantInfo = ({ info })=>{
                         ]
                     }, void 0, true, {
                         fileName: "src/components/RestaurantInfo.jsx",
-                        lineNumber: 19,
-                        columnNumber: 9
+                        lineNumber: 23,
+                        columnNumber: 5
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/RestaurantInfo.jsx",
-                lineNumber: 9,
-                columnNumber: 7
+                lineNumber: 13,
+                columnNumber: 4
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "border rounded-md font-bold  p-2 text-sm",
@@ -65770,36 +65786,36 @@ const RestaurantInfo = ({ info })=>{
                                 className: "w-4 h-4"
                             }, void 0, false, {
                                 fileName: "src/components/RestaurantInfo.jsx",
-                                lineNumber: 25,
-                                columnNumber: 11
+                                lineNumber: 29,
+                                columnNumber: 6
                             }, undefined),
                             " ",
                             avgRatingString
                         ]
                     }, void 0, true, {
                         fileName: "src/components/RestaurantInfo.jsx",
-                        lineNumber: 24,
-                        columnNumber: 9
+                        lineNumber: 28,
+                        columnNumber: 5
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                         className: "pt-2 border-t text-xs font-normal text-gray-500",
                         children: totalRatingsString
                     }, void 0, false, {
                         fileName: "src/components/RestaurantInfo.jsx",
-                        lineNumber: 27,
-                        columnNumber: 9
+                        lineNumber: 31,
+                        columnNumber: 5
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/RestaurantInfo.jsx",
-                lineNumber: 23,
-                columnNumber: 7
+                lineNumber: 27,
+                columnNumber: 4
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/RestaurantInfo.jsx",
-        lineNumber: 8,
-        columnNumber: 5
+        lineNumber: 12,
+        columnNumber: 3
     }, undefined);
 };
 _c = RestaurantInfo;
