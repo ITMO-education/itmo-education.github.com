@@ -8,9 +8,6 @@ import {
 import { CDN_URL } from '../utils/constants';
 
 const CartItemList = () => {
-
-  ym(95214851,'reachGoal','tt_order')
-
   const cartItems = useSelector(selectItemsInCart);
   const dispatch = useDispatch();
 
@@ -56,7 +53,7 @@ const CartItemList = () => {
 
               <p className='my-2 space-x-1'>
                 <span className='font-semibold'>
-                  ₹
+                  ₽
                   {parseFloat(
                     (
                       item?.quantity * parseFloat(item?.item?.itemPrice / 100)
