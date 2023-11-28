@@ -55525,7 +55525,7 @@ const OrderSummary = ()=>{
             }, void 0, false, {
                 fileName: "src/components/OrderSummary.jsx",
                 lineNumber: 16,
-                columnNumber: 7
+                columnNumber: 4
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "py-4 text-lg space-y-4 border-b",
@@ -55543,23 +55543,23 @@ const OrderSummary = ()=>{
                             }, void 0, true, {
                                 fileName: "src/components/OrderSummary.jsx",
                                 lineNumber: 21,
-                                columnNumber: 11
+                                columnNumber: 6
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                                 children: [
-                                    "₹ ",
+                                    "₽ ",
                                     totalPrice / 100
                                 ]
                             }, void 0, true, {
                                 fileName: "src/components/OrderSummary.jsx",
                                 lineNumber: 22,
-                                columnNumber: 11
+                                columnNumber: 6
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/components/OrderSummary.jsx",
                         lineNumber: 20,
-                        columnNumber: 9
+                        columnNumber: 5
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                         className: "flex justify-between items-center font-semibold",
@@ -55570,23 +55570,23 @@ const OrderSummary = ()=>{
                             }, void 0, false, {
                                 fileName: "src/components/OrderSummary.jsx",
                                 lineNumber: 25,
-                                columnNumber: 11
+                                columnNumber: 6
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                                 children: [
-                                    " - ₹ ",
+                                    " - ₽ ",
                                     parseFloat(discount).toFixed(2)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/components/OrderSummary.jsx",
                                 lineNumber: 26,
-                                columnNumber: 11
+                                columnNumber: 6
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/components/OrderSummary.jsx",
                         lineNumber: 24,
-                        columnNumber: 9
+                        columnNumber: 5
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                         className: "flex justify-between items-center font-semibold",
@@ -55597,41 +55597,41 @@ const OrderSummary = ()=>{
                             }, void 0, false, {
                                 fileName: "src/components/OrderSummary.jsx",
                                 lineNumber: 29,
-                                columnNumber: 11
+                                columnNumber: 6
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                                 children: [
-                                    "+ ₹ ",
+                                    "+ ₽ ",
                                     parseFloat(deliveryCharges).toFixed(2)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/components/OrderSummary.jsx",
                                 lineNumber: 30,
-                                columnNumber: 11
+                                columnNumber: 6
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/components/OrderSummary.jsx",
                         lineNumber: 28,
-                        columnNumber: 9
+                        columnNumber: 5
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                         className: "text-sm my-2",
                         children: [
-                            "You'll save ₹",
+                            "You'll save ₽",
                             parseFloat(discount).toFixed(2),
                             " on this order \uD83C\uDF89"
                         ]
                     }, void 0, true, {
                         fileName: "src/components/OrderSummary.jsx",
                         lineNumber: 33,
-                        columnNumber: 9
+                        columnNumber: 5
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/OrderSummary.jsx",
                 lineNumber: 19,
-                columnNumber: 7
+                columnNumber: 4
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "py-4 border-b",
@@ -55643,43 +55643,48 @@ const OrderSummary = ()=>{
                         }, void 0, false, {
                             fileName: "src/components/OrderSummary.jsx",
                             lineNumber: 40,
-                            columnNumber: 11
+                            columnNumber: 6
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
                             className: "text-orange-500",
                             children: [
-                                "₹ ",
+                                "₽ ",
                                 parseFloat(totalAmt).toFixed(2)
                             ]
                         }, void 0, true, {
                             fileName: "src/components/OrderSummary.jsx",
                             lineNumber: 41,
-                            columnNumber: 11
+                            columnNumber: 6
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "src/components/OrderSummary.jsx",
                     lineNumber: 39,
-                    columnNumber: 9
+                    columnNumber: 5
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/components/OrderSummary.jsx",
                 lineNumber: 38,
-                columnNumber: 7
+                columnNumber: 4
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
                 className: "w-full block mt-4 uppercase font-bold text-lg bg-orange-600 text-white text-center p-4 rounded-md",
-                children: "Place order"
+                onClick: ()=>{
+                    console.log(Date.now() - localStorage.getItem("startTime"));
+                    ym(95214851, "reachGoal", "tt_order");
+                    alert("Заказ создан. С вашей карты уже удержано " + parseFloat(totalAmt).toFixed(2) + "₽");
+                },
+                children: "Заказать"
             }, void 0, false, {
                 fileName: "src/components/OrderSummary.jsx",
                 lineNumber: 47,
-                columnNumber: 7
+                columnNumber: 4
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/OrderSummary.jsx",
         lineNumber: 15,
-        columnNumber: 5
+        columnNumber: 3
     }, undefined);
 };
 _s(OrderSummary, "jUCRiNJseDnn5jMJ/U68nelQUJo=", false, function() {
