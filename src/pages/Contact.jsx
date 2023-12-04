@@ -1,7 +1,7 @@
 import { ArrowTopRightOnSquareIcon } from '@heroicons/react/24/outline';
 
 const details = {
-  name: 'Bukov Alexandr && Okladnikova Olga',
+  name: 'BAOO',
   bio: 'Yandex Metric users',
   contact: {
     email: 'olegthander@yandex.ru',

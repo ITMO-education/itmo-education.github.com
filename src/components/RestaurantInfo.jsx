@@ -2,7 +2,7 @@ import { StarIcon } from '@heroicons/react/24/solid';
 
 const RestaurantInfo = ({info}) => {
 	const startTime = Number(localStorage.getItem('startTime'));
-
+щл
 	ym(95214851,'reachGoal','restorant_tto')
 
 	const {name, sla, areaName, totalRatingsString, avgRatingString, cuisines} =

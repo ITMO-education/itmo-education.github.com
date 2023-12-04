@@ -2,7 +2,7 @@ import { createContext, useReducer } from 'react';
 
 const INITIAL_STATE = {
   userInfo: {
-    name: 'Bukov Alexandr && Okladnikova Olga',
+    name: 'BAOO',
     email: 'olegthander@yandex.ru',
   },
 };
