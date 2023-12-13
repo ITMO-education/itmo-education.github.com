@@ -30,7 +30,7 @@ const FoodList = ({ foods }) => {
     },
   });
 
-  if (!foods) {
+ if (foods.length === 0) {
     return null;
   }
 
