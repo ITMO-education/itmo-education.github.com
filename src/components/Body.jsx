@@ -37,7 +37,7 @@ const Body = (props) => {
 
 
       {/* food list */}
-      <FoodList foods={foods} isLoading={isLoading} />
+      <FoodList foods={foods} isLoading={isLoading} experiment={props.expirement} />
 
       {/* search bar */}
       <form

@@ -6,7 +6,7 @@ const experimentId = "ya-da-experiment"
 const Home = () => {
 	let exp = localStorage.getItem(experimentId)
 	if (!exp) {
-		exp = Math.floor(Math.random() * 3).toString()
+		exp = Math.floor(Math.random() * 4).toString()
 		localStorage.setItem(experimentId, exp)
 	}
 	// Эксперимент 1 - показываем лучшие предложения в начале

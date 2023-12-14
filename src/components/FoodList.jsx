@@ -7,7 +7,7 @@ import {
 } from '@heroicons/react/24/outline';
 import { useState } from 'react';
 
-const FoodList = ({ foods }) => {
+const FoodList = ({ foods, experiment }) => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [sliderRef, instanceRef] = useKeenSlider({
     mode: 'free-snap',
@@ -30,7 +30,7 @@ const FoodList = ({ foods }) => {
     },
   });
 
- if (foods.length === 0) {
+ if (foods.length === 0 && experiment === 4) {
     return null;
   }
 
