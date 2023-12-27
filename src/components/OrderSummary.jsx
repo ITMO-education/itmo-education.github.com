@@ -4,7 +4,7 @@ import {
 	selectTotalPrice,
 } from '../features/cart/cartSlice';
 
-const OrderSummary = () => {
+const OrderSummary = ({}) => {
 	const cartItems = useSelector(selectItemsInCart);
 	const totalPrice = useSelector(selectTotalPrice);
 	const discount = (totalPrice * 0.1) / 100;
@@ -47,10 +47,20 @@ const OrderSummary = () => {
 			<button
 				className='w-full block mt-4 uppercase font-bold text-lg bg-orange-600 text-white text-center p-4 rounded-md'
 				onClick={() => {
-					console.log(Date.now()-localStorage.getItem('startTime'))
-					ym(95214851, 'reachGoal', 'tt_order')
+					const exp = localStorage.getItem("ya-da-experiment")
+					switch (exp) {
+						case 2:
+							ym(95214851,'reachGoal','tt_order_b')
+							break
+						case 3:
+							ym(95214851,'reachGoal','tt_order_c')
+							break
+						default:
+							ym(95214851, 'reachGoal', 'tt_order')
+					}
 					alert('Заказ создан. С вашей карты уже удержано ' + parseFloat(totalAmt).toFixed(2) + '₽')
-				}}
+				}
+				}
 			>
 				Заказать
 			</button>

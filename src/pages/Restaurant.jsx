@@ -9,6 +9,17 @@ const Restaurant = () => {
   const { id } = useParams();
   const { restaurant, isLoading } = useRestaurantsMenu(id);
 
+  const exp = localStorage.getItem("ya-da-experiment")
+
+  switch (exp) {
+    case 1:
+      ym(95214851, 'reachGoal', 'restorant_tto_b')
+      break
+    default:
+      ym(95214851, 'reachGoal', 'restorant_tto')
+      break
+  }
+
   return (
     <div className='container-md my-8'>
       {isLoading ? (
